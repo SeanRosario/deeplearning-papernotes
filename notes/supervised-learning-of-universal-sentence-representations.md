@@ -5,6 +5,8 @@ TLDR; The authors show that supervised training on the NLI task can produce high
 ### Key Points
 - The SNLI corpus is a large corpus of sentence pairs that have been manually categories into 3 classes: entailment, contradiction, and neutral. The SNLI task is good for learning sentence vectors because it forces the model to learn semantic representations
 
+-  The word vectors for the models are 300 dimension Glove vectors pretrained on Common crawl. These weights are fixed during training, testing and inference.
+
 - The 4 sentence encoding architectures used are:
     - LSTM/GRU: Essentially the encoder of a seq2seq model
     - BiLSTM: Bi-directional LSTM where each dim of the two (forwards and backwards) encoding are either summed or max-pooled.
